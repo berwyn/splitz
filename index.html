@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Split Endz</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.brown-orange.min.css" />
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .layout-transparent {
+                background: url('/images/header.jpeg') center / cover;
+            }
+            
+            ._-mdl-card, ._-mdl-card>* { width: 100% }
+            
+            .white-text { color: white }
+            .accent-text { color: rgb(255,110,64) }
+            .block { display: block }
+            .flex-column { flex-direction: column }
+            .flex-start { align-self: flex-start }
+            .flex-child-start { align-items: flex-start }
+            .flex-child-around { justify-content: space-between }
+            
+            .list-header,
+            .list-subtitle {
+                padding-left: 16px;
+                padding-right: 16px;
+             }
+             
+             .list-header.has-subtitle { margin-bottom: 0 }
+             .list-header + .list-subtitle { margin-top: 0 }
+             
+             .fullsize-parent { position: relative }
+             .fullsize {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: 0;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="layout-transparent mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Split Endz Salon and Spa</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a href="#About" class="mdl-navigation__link">About</a>
+                        <a href="#Services" class="mdl-navigation__link">Services</a>
+                        <a href="#Contact" class="mdl-navigation__link">Contact</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Split Endz Spa & Salon</span>
+                <nav class="mdl-navigation">
+                    <a href="#About" class="mdl-navigation__link">About</a>
+                    <a href="#Services" class="mdl-navigation__link">Services</a>
+                    <a href="#Contact" class="mdl-navigation__link">Contact</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div id="About" class="mdl-grid">
+                    <div class="mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
+                        <div class="_-mdl-card mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">About Us</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <p>
+                                    Welcome to Split Endz Salon & Spa, located in Huntley, Illinios, where every client is treated to customized services from educated stylists in a friendly atmosphere.
+                                </p>
+                                <h5>Our Team</h5>
+                                <p>
+                                    At Split Endz Salon & Spa, our amazing team and personalized services will have you walking out of our salon feeling like a "new and better you". We offer a personal, friendly approach to styling, coloring and cutting your hair. Our highly trained staff of stylists and master colorists are at the forefront of today's color and cut techniques. To match their skill, we use only the best hair treatment products. Our stylists use true techniques as the foundation of their craft, while constantly searching for the new and improved processes.
+                                    Our stylist Michele Sandon is also a licensed Esthetician that preforms all skin care services in our private spa room and uses the entire line of Dermalogica Skin Care© products.
+                                </p>
+                                <h5>Our Mission</h5>
+                                <p>
+                                    Our mission is to provide the highest degree of customer service in a professional and relaxed environment. As industry leaders, we're dedicated to up dating our skills and product knowledge by attending advanced training workshops and seminars. We strive to create the ultimate experience for every client. At Split Endz Salon & Spa, excellent customer service is not just a priority. It is our culture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Services" class="mdl-grid">
+                    <div class="mdl-grid mdl-cell--2-offset-desktop">
+                        <h2 class="white-text">Services</h2>
+                    </div>
+                    <div class="_-mdl-card mdl-card mdl-shadow--2dp mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text">
+                            <div class="mdl-grid flex-child-around">
+                                <!-- Hair -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Hair</h4>
+                                    <h6 class="list-subtitle">&#8203;</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Cut</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$27</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Bang Trim</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$5</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Mens Cut</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$21</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Womens Cut</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$31</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">12 & Under</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$12</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Girls 13 - 17</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$21</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Boys 13 - 17</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$21</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Extensions</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$25</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Hair -->
+                                
+                                <!-- Styles -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Styles</h4>
+                                    <h6 class="list-subtitle">&#8203;</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Cut, blow, dry & style</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$31</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Cut, set & style</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$30</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Shampoo, blow dry & style</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$20</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Make-up application</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$40</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Up-dos</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$60</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Bridal up-dos</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$90</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Bridal make-up application</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$60</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Styles -->
+                                
+                                <!-- Color -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Color</h4>
+                                    <h6 class="list-subtitle">Additional charges may apply for long hair</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Color touch up</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$56</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Partial foil (one color)</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$66</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Full foil (one color)</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$81</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Additional foil colors</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$34</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Corrective color</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$84</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Toner</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$24</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Block color</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$84</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Mens color</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$24</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Mens highlight</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$34</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Color -->
+                            </div>
+                            <div class="mdl-grid flex-child-around">
+                                <!-- Wax -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Waxing</h4>
+                                    <h6 class="list-subtitle">&#8203;</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Lip</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$12</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Eyebrow</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$12</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Chin</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$12</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Face</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$25</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Underarm</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$21</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Bikini</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$25</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">1/2 leg (both)</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$35</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Full leg (both)</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$65</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Back</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$45</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Wax -->
+                                
+                                <!-- Perms -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Perms</h4>
+                                    <h6 class="list-subtitle">Starting prices</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Perm with style & blow dry</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$65</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Perm for colored hair</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$70</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Long hair & specialty wraps</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$89</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Perms -->
+                                
+                                <!-- Treatments -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Treatments</h4>
+                                    <h6 class="list-subtitle">Blow dry & style not included</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Deep Condition</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$13</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Chlorine removal</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$18</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Relaxer/Straightener</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$82</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Awapuhi Wild Ginger Keritiplex </span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$32</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Brazilian Blowout Smoothing </span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$175</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Treatments -->
+                            </div>
+                            <div class="mdl-grid flex-child-around">
+                                <!-- Face -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Face</h4>
+                                    <h6 class="list-subtitle">Customised services available, additional charges may apply</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Facial</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$65</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Photo facial</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$75</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Glycolic Peel</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$75</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Microdermabrasion</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$85</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Mini-microdermabrasion</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$35</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Back facial</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$30</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Face -->
+                                
+                                <!-- Nails -->
+                                <div class="mdl-cell--4-col mdl--12-col-phone">
+                                    <h4 class="list-header has-subtitle">Nails</h4>
+                                    <h6 class="list-subtitle">&#8203;</h6>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Polish</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$11</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Manicure</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$14</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">French manicure</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$19</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Mens manicure</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$13</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Child manicure</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$13</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Pedicure</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$25</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">No chip polish</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$35</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Shellac</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">$35</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Nails -->
+                                
+                                <!-- Dummy -->
+                                <div class="mdl-cell--4-col mdl-cell--12-col-phone">
+                                    <!-- Just to get even spacing across all rows -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Contact" class="mdl-grid">
+                    <div class="mdl-grid mdl-cell--2-offset-desktop">
+                        <h2 class="white-text">Contact Us</h2>
+                    </div>
+                    <div class="mdl-grid mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--12-col-phone">
+                        <div class="_-mdl-card mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__media">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.447525785507!2d-88.40900768428004!3d42.16210795557146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f14472165b943%3A0xafa0e1a34e7986d5!2sSplit+Endz+Salon+%26+Spa!5e0!3m2!1sen!2sus!4v1461201913965" frameborder="0" height="400"></iframe>
+                            </div>
+                            <div class="mdl-card__supporting-text mdl-grid">
+                                <div class="mdl-cell--6-col mdl-cell--12-col-phone">
+                                    <h4>Phone</h4>
+                                    <span>(847) 659-1200</span>
+                                    <h4>Address</h4>
+                                    <span class="block">10703 Dundee Road</span>
+                                    <span class="block">Huntley, IL 60142</span>
+                                    <span class="block">(Next to L.A. Tan)</span>
+                                </div>
+                                <div class="mdl-cell--6-col mdl-cell--12-col-phone">
+                                    <h4 class="list-header">Hours</h4>
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Monday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">Closed</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Tuesday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">9am - 5pm</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Wednesday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">9am - 8pm</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Thursday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">9am - 8pm</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Friday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">9am - 5pm</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Saturday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">9am - 3pm</span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-primary-content">Sunday</span>
+                                            <span class="mdl-list__item-secondary-action accent-text">Closed</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="tel:8476591200">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo copyright">Copyright &copy; 2015 Split Endz Spa & Salon</div>
+                        <a class="mdl-mini-footer__social-button mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://www.facebook.com/SplitEndzSalonandSpa/" target="_blank">Facebook</a>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var copyright = document.querySelector('.copyright');
+                copyright.innerHTML = 'Copyright &copy; 2015 - ' + (new Date().getFullYear()) + ' Split Endz Spa & Salon';
+            });
+        </script>
+    </body>
+</html>
